@@ -23,9 +23,26 @@ pip install -r requirements.txt
 ```
 
 ## Training
-1. Modify the project path and data set path in `$PROJECT_ROOT$/ltr/admin/local.py`  
+1. Modify the project path and dataset path in `$PROJECT_ROOT$/ltr/admin/local.py`.  
 2. Download [ToMP-50](https://drive.google.com/file/d/1dU1IYIv5x_7iOUVTgh8uOq36POFOQBWT/edit) pretrained weights and put it under `$PROJECT_ROOT$/ltr/models/pretrained`.
+3. Run the following command.  
 ```
 python ltr/run_training.py --train_module tomp --train_name tomp50_v1
 ```
+
 ## Evaluation
+1. Modify the dataset path in `$PROJECT_ROOT$/pytracking/evaluation/environment.py`
+2. Put the checkpoint into `$PROJECT_ROOT$/pytracking/networks` and select the checkpoint name in `$PROJECT_ROOT$/pytracking/parameter/tomp/tomp50.py`. Or just modify the checkpoint path in `$PROJECT_ROOT$/pytracking/parameter/tomp/tomp50.py`.  
+3. Run the following command.  
+```
+python pytracking/run_tracker.py --tracker_name tomp --tracker_param tomp50 --runid 8600 --dataset_name lashertestingset
+```
+
+## Results and Models  
+| Model | GTOT(PR/SR) | RGBT210(PR/SR) | RGBT234(PR/SR) | LasHeR(PR/NPR/SR) | VTUAV(PR/SR) |
+|:-------:|:-------------:|:----------------:|:----------------:|:-------------------:|:--------------:|
+| AFter | 91.6 / 78.5   | 87.6 / 63.5      | 90.1 / 66.7      | 70.3 / 65.8 / 55.1    | 84.9 / 72.5    |
+
+
+
+
