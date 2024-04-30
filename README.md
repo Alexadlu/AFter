@@ -23,7 +23,8 @@ pip install -r requirements.txt
 ```
 
 ## Training
-Download [ToMP-50](https://drive.google.com/file/d/1dU1IYIv5x_7iOUVTgh8uOq36POFOQBWT/edit) pretrained weights and put it under `$PROJECT_ROOT$/ltr/models/pretrained`.
+1. Modify the project path and data set path in `$PROJECT_ROOT$/ltr/admin/local.py`  
+2. Download [ToMP-50](https://drive.google.com/file/d/1dU1IYIv5x_7iOUVTgh8uOq36POFOQBWT/edit) pretrained weights and put it under `$PROJECT_ROOT$/ltr/models/pretrained`.
 ```
 python ltr/run_training.py --train_module tomp --train_name tomp50_v1
 ```
