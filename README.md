@@ -17,7 +17,7 @@ cd AFter
 ```
 Our code is trained and tested with Python == 3.8, PyTorch == 1.8.1 and CUDA == 11.2 on NVIDIA GeForce RTX 4090, you may use a different version according to your GPU.
 ```
-conda create -n coconet python=3.8.13
+conda create -n after python=3.8.13
 conda activate after
 pip install -r requirements.txt
 ```
