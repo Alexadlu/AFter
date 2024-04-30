@@ -39,8 +39,8 @@ python pytracking/run_tracker.py --tracker_name tomp --tracker_param tomp50 --ru
 ```
 
 ## Results and Models  
-| Model | GTOT(PR/SR) | RGBT210(PR/SR) | RGBT234(PR/SR) | LasHeR(PR/NPR/SR) | VTUAV(PR/SR) |
-|:-------:|:-------------:|:----------------:|:----------------:|:-------------------:|:--------------:|
+| Model | GTOT(PR/SR) | RGBT210(PR/SR) | RGBT234(PR/SR) | LasHeR(PR/NPR/SR) | VTUAV(PR/SR) | Checkpoint | Raw Result |
+|:-------:|:-------------:|:----------------:|:----------------:|:-------------------:|:--------------:|:--------------:|:--------------:|
 | AFter | 91.6 / 78.5   | 87.6 / 63.5      | 90.1 / 66.7      | 70.3 / 65.8 / 55.1    | 84.9 / 72.5    |
 
 
