@@ -67,7 +67,6 @@ class BaseTrainer:
 
                 for epoch in range(self.epoch+1, max_epochs+1):
                     self.epoch = epoch
-                    self.save_checkpoint()
                     self.train_epoch()
 
                     if self.lr_scheduler is not None:

@@ -13,8 +13,8 @@ import ltr.models.transformer.heads as heads
 import pdb
 import torch
 
-class ToMPnet(nn.Module):
-    """The ToMP network.
+class AFter(nn.Module):
+    """Base on the ToMP network.
     args:
         feature_extractor:  Backbone feature extractor network. Must return a dict of feature maps
         head:  Head module containing classifier and bounding box regressor.
@@ -133,7 +133,7 @@ def tompnet50(filter_size=4, head_layer='layer3', backbone_pretrained=True, head
                       classifier=classifier, bb_regressor=bb_regressor)
 
     # ToMP network
-    net = ToMPnet(feature_extractor=backbone_net, head=head, head_layer=head_layer)
+    net = AFter(feature_extractor=backbone_net, head=head, head_layer=head_layer)
     return net
     
 @model_constructor
@@ -174,7 +174,7 @@ def tompnet50_rgbt(filter_size=1, head_layer='layer3', backbone_pretrained=True,
     head = heads.Head(filter_predictor=filter_predictor, feature_extractor=head_feature_extractor,
                       classifier=classifier, bb_regressor=bb_regressor,modals_fusion=han_fusion)
     # ToMP network
-    net = ToMPnet(feature_extractor=backbone_net, head=head, head_layer=head_layer)
+    net = AFter(feature_extractor=backbone_net, head=head, head_layer=head_layer)
 
     usepretrain = True
     # usepretrain = False
@@ -226,5 +226,5 @@ def tompnet101(filter_size=1, head_layer='layer3', backbone_pretrained=True, hea
     # load pretrained model
 
     # ToMP network
-    net = ToMPnet(feature_extractor=backbone_net, head=head, head_layer=head_layer)
+    net = AFter(feature_extractor=backbone_net, head=head, head_layer=head_layer)
     return net
