@@ -1,6 +1,9 @@
 # AFter
 Attention-based Fusion Router for RGBT Tracking.  
-![性能](https://img2.imgtp.com/2024/05/01/Qv646jYC.png)
+<div align="center">
+<img style="width:85%;" src="https://img2.imgtp.com/2024/05/01/Qv646jYC.png"/>
+</div>
+
 ## Dataset
 We use the LasHeR training set for training, GTOT, RGBT210, RGBT234, LasHeR testing set, VTUAVST for testing, and their project addresses are as follows:
 * [GTOT](http://chenglongli.cn/code-dataset/)
