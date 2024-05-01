@@ -1,6 +1,6 @@
 # AFter
-Attention-based Fusion Router for RGBT Tracking.
-
+Attention-based Fusion Router for RGBT Tracking.  
+![性能](https://img2.imgtp.com/2024/05/01/Qv646jYC.png)
 ## Dataset
 We use the LasHeR training set for training, GTOT, RGBT210, RGBT234, LasHeR testing set, VTUAVST for testing, and their project addresses are as follows:
 * [GTOT](http://chenglongli.cn/code-dataset/)
@@ -41,8 +41,7 @@ python pytracking/run_tracker.py --tracker_name tomp --tracker_param tomp50 --ru
 ## Results and Models  
 | Model | GTOT(PR/SR) | RGBT210(PR/SR) | RGBT234(PR/SR) | LasHeR(PR/NPR/SR) | VTUAV(PR/SR) | Checkpoint | Raw Result |
 |:-------:|:-------------:|:----------------:|:----------------:|:-------------------:|:--------------:|:--------------:|:--------------:|
-| AFter | 91.6 / 78.5   | 87.6 / 63.5      | 90.1 / 66.7      | 70.3 / 65.8 / 55.1    | 84.9 / 72.5    |
+| AFter | 91.6 / 78.5   | 87.6 / 63.5      | 90.1 / 66.7      | 70.3 / 65.8 / 55.1    | 84.9 / 72.5    | [download](https://pan.baidu.com/s/1skx_Vlx693bBM3v3Z0u7Lg?pwd=mmic) | [download](https://pan.baidu.com/s/1fRyqeQWHtbdd1Qub_qCsLQ?pwd=mmic)
 
-
-
-
+## Acknowledgments
+Our project is based on the [pytracking](https://github.com/visionml/pytracking) framework and [ToMP](https://github.com/visionml/pytracking/blob/master/pytracking/README.md#ToMP). Thanks for their contributions which help us to quickly implement our ideas.
