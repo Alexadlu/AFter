@@ -50,7 +50,7 @@ def parameters():
     params.conf_ths = 0.9
     params.search_area_rescaling_at_occlusion = True
 
-    params.net = NetWithBackbone(net_path='ToMPnet_ep0086.pth.tar', use_gpu=params.use_gpu)
+    params.net = NetWithBackbone(net_path='AFter_ep0086.pth.tar', use_gpu=params.use_gpu)
 
     params.vot_anno_conversion_type = 'preserve_area'
 

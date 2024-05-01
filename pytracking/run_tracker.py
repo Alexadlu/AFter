@@ -1,8 +1,7 @@
 import os
 import sys
 import argparse
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-import torch
+os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 
 env_path = os.path.join(os.path.dirname(__file__), '..')
 if env_path not in sys.path:
@@ -43,8 +42,8 @@ def main():
     parser = argparse.ArgumentParser(description='Run tracker on sequence or dataset.')
     parser.add_argument('--tracker_name', default='tomp', type=str, help='Name of tracking method.')
     parser.add_argument('--tracker_param', default='tomp50', type=str, help='Name of parameter file.')
-    parser.add_argument('--runid', type=int, default=2000, help='The run id.') # 26249    
-    parser.add_argument('--dataset_name', type=str, default='lashertestingset', help='Name of dataset (otb, nfs, uav, tpl, vot, tn, gott, gotv, lasot, lashertestingset).')
+    parser.add_argument('--runid', type=int, default=8600, help='The run id.') # 26249    
+    parser.add_argument('--dataset_name', type=str, default='lashertestingset', help='Name of dataset (gtot, rgbt210, rgbt234, lashertestingset, vtuavst).')
     # epoch+00
     # 00 lasher 22:rgbt234 44:rgbt210 55:vtuavst 99:gtot
     parser.add_argument('--sequence', type=str, default=None, help='Sequence number or name.')
