@@ -1,5 +1,5 @@
 # AFter
-Attention-based Fusion Router for RGBT Tracking.  
+Attention-based Fusion Router for RGBT Tracking.[arXiv](https://arxiv.org/pdf/2405.02717v1)  
 <div align="center">
 <img style="width:85%;" src="https://img2.imgtp.com/2024/05/01/Qv646jYC.png"/>
 </div>
