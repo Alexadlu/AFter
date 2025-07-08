@@ -48,5 +48,20 @@ python pytracking/run_tracker.py --tracker_name tomp --tracker_param tomp50 --ru
 |:-------:|:-------------:|:----------------:|:----------------:|:-------------------:|:--------------:|:--------------:|:--------------:|
 | AFter | 91.6 / 78.5   | 87.6 / 63.5      | 90.1 / 66.7      | 70.3 / 65.8 / 55.1    | 84.9 / 72.5    | [download](https://pan.baidu.com/s/1skx_Vlx693bBM3v3Z0u7Lg?pwd=mmic) | [download](https://pan.baidu.com/s/1fRyqeQWHtbdd1Qub_qCsLQ?pwd=mmic)
 
+### Citation
+
+Please kindly cite this paper in your publications if it helps your research:
+```
+@article{Lu2025AFTER,
+  title={AFTER: Attention-based Fusion Router for RGBT Tracking},
+  author={Andong Lu and Wanyu Wang and Chenglong Li and Jin Tang and Bin Luo},
+  journal={IEEE Transactions on Image Processing},
+  year={2025},
+}
+```
+
+Contact: adlu_ah@foxmail.com
+
+
 ## Acknowledgments
 Our project is based on the [pytracking](https://github.com/visionml/pytracking) framework and [ToMP](https://github.com/visionml/pytracking/blob/master/pytracking/README.md#ToMP). Thanks for their contributions which help us to quickly implement our ideas.
